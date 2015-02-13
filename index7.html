@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>Customed Desktop</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="jquery-ui\css\ui-lightness\jquery-ui-1.10.4.custom.min.css"/>
+    <link rel="stylesheet" href="index7.css"/>
+  </head>
+  <body>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <ul class="item active" id="slide1"></ul>
+        <ul class="item" id="slide2"></ul>
+        <ul class="item" id="slide3"></ul>
+        <div><div class="slideTop" style="z-index:3; position: fixed; top:0; left: 45%;"></div></div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <script type="text/javascript" src="../backbone/jquery.js"></script>
+    <script type="text/javascript" src="../backbone/underscore.js"></script>
+    <script type="text/javascript" src="../backbone/backbone.js"></script>
+    <script type="text/javascript" src="../backbone/backbone.localStorage-min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/template" id="iconTemplate">
+      <img src="<%= image%>" class="icon"/><br/><div class="clear text-center title"><%= title%></div><input type="text" class="change" value="<%= title%>"/>
+    </script>
+    <script type="text/template" id="popTemplate">
+      <div class="popup" style="z-index:2; margin-left:20%; margin-top:5%; position:absolute; background-color:white; width:50%;">
+        <header style="background-color:#ccc; border:1px black solid;">
+          <a class="close">[Close]</a>
+        </header>
+        <section style="height:100%;"><p>
+          W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2014 by Refsnes Data. All Rights Reserved.
+        </p></section>
+      </div>
+    </script>
+    <script type="text/template" id="addTemplate">
+      <li class="addBox" style="background-color: rgba(0,0,0,0.3); width: 60px; height: 60px; top: <%= top%>; left: <%= left%>"><span style="font-size:60px; top:0;" class="glyphicon glyphicon-plus"></span></li>
+    </script>
+    <script type="text/template" id="addBtnTemplate">
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">Title:</span>
+        <input type="text" class="form-control" placeholder="Title"  id="title"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">isLink:</span>
+        <input type="checkbox" class="form-control" id="isLink"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">siteURL:</span>
+        <input type="text" class="form-control" placeholder="siteURL" id="siteURL"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">image:</span>
+        <input type="text" class="form-control" placeholder="image" id="image"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">slide:</span>
+        <input type="text" class="form-control" placeholder="slide" id="slide"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">tooltip:</span>
+        <input type="text" class="form-control" placeholder="tooltip" id="tooltip"/>
+      </div>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">top:</span>
+        <input type="checkbox" class="form-control" id="top"/>
+      </div>
+      <button value="Cancel" id="cancel">Cancel</button><button value="Submit" id="submit">Submit</button>
+    </script>
+    <script type="text/javascript" src="index7.js"></script>
+  </body>
+</html>

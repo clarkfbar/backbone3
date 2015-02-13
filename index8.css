@@ -1,0 +1,134 @@
+h1,h2,h3,h4,h5{
+  margin: 10px auto;
+  font-weight: bold;
+}
+
+body{
+  overflow-y: scroll;
+  background-color: #e8ffe3;
+}
+
+#pageHeader{
+  padding: 10px 150px;
+  border-left: 5px double #ccc;
+  border-top: 5px double #ccc;
+  border-right: 5px double #ccc;
+}
+
+#addNew{
+  padding: 0px 150px;
+  border: 5px double #ccc;
+}
+
+#editHeader>div{
+  padding: 10px 50px;
+  border-left: 5px double #ccc;
+  border-right: 5px double #ccc;
+  background-image: url("paper.jpg");
+  background-clip: padding-box;
+  background-size: 106% 108%;
+  background-position: -30px 0;
+  background-repeat: no-repeat;
+}
+
+#editSection{
+  padding: 10px 50px;
+  border: 5px double #ccc;
+  border-bottom: none;
+  min-height: 500px;
+  background-image: url("paper.jpg");
+  background-size: 106% 108%;
+  background-clip: padding-box;
+  background-position: -30px -20px;
+}
+
+#editFooter{
+  height: 50px;
+  border: 5px double #ccc;
+  border-bottom: none;
+}
+
+#editFooter>button{
+  margin-top: 5px;
+}
+
+#content{
+  outline: none;
+  min-height: 500px;
+}
+
+#editTitle{
+  width: 90%;
+  margin: 0 auto;
+  background: transparent;
+  border-color: blue;
+}
+
+.readMore{
+  font-size: 20px;
+}
+
+#createNew{
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+#articles footer{
+  margin-top: 10px;
+}
+
+.date{
+  color: #ccc;
+}
+
+#pageHeader h1{
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+#articles{
+  padding: 0px 150px;
+  border: 5px double #ccc;
+}
+
+#articles>article{
+  border-left: 5px double #ccc;
+  border-right: 5px double #ccc;
+  border-top: 5px double red;
+  padding: 20px;
+}
+
+#pageFooter{
+  border-left: 5px double #ccc;
+  border-bottom: 5px double #ccc;
+  border-right: 5px double #ccc;
+  padding: 0 150px;
+}
+
+#pageFooter>div{
+  border-left: 5px double #ccc;
+  border-right: 5px double #ccc;
+  min-height: 50px;
+  padding-top: 15px;
+}
+
+#sidenav{
+  width: 150px;
+  padding-top: 20px;
+  border-bottom: none;
+}
+
+.pin-wrapper{
+  position: absolute;
+  left: 6px;
+}
+
+#sidenav>li a{
+  padding: 10px 0px 10px 10px;
+  border: none;
+  word-wrap: break-word;
+}
+
+#sidenav .active a{
+  border: none;
+}

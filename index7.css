@@ -1,0 +1,96 @@
+html, body, .carousel-inner, .item{
+  height: 100%;
+}
+
+.item{
+  background-image: url("images/desktop.jpg"); 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;  
+}
+
+#carousel-example-generic{
+  height: 100%;
+}
+
+.carousel-control{
+  width: 40px;
+}
+
+.icon{
+  width: 60px;
+  height: 60px;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+.carousel-inner li{
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  margin: 10px;
+  position: absolute !important;
+}
+
+.carousel-inner li:hover{
+  background-color: rgba(0,0,0,0.3);
+  border: 1px rgba(0,0,0,0.3) outset;
+  color: white;
+}
+
+.carousel-inner li:hover .title{
+  background-color: rgba(0,0,255,0.5);
+}
+
+.title{
+  width: 60px;
+}
+
+header{
+  height: 25px;
+}
+
+.change{
+  width: 60px;
+}
+
+.popup{
+  min-width: 200px;
+  min-height: 200px;
+  margin: 0 !important;
+  left: 25%;
+  top: 15%;
+}
+
+.popup section{
+  height: 80% !important;
+}
+
+.popup p{
+  overflow: auto;
+  height: 100%;
+}
+
+.addLink .input-group{
+  padding-left: 30%;
+}
+
+.addLink{
+  position: relative;
+  background: white;
+  width: 50%;
+  top: 20%;
+  left: 26%
+}
+
+#cancel{
+  margin-left: 43%;
+}
+
+.input-group-addon:first-child{
+  min-width: 73px;
+}

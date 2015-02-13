@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>Share Me</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.min.css"/>
+    <link rel="stylesheet" href="index8.css"/>
+  </head>
+  <body>
+    <header id="pageHeader">
+      <h1><a href="">Share Me</a><a title="Create New Article" href="#createnew"><span id="createNew" class="pull-right glyphicon glyphicon-file"></span></a></h1>
+    </header>
+    <section id="articles">
+      <ul id="sidenav" class="nav nav-tabs nav-stacked">
+      </ul>
+    </section>
+    <section id="addNew">
+      <header id="editHeader"><div><input id="editTitle" class="text-center form-control input-lg" type="text" placeholder="Place enter the title here"/></div></header>
+      <section id="editSection">
+        <div id="content" class="content" contenteditable="true"> </div>
+      </section>
+      <footer id="editFooter">
+        <button id="submit" class="btn btn-primary pull-right">Submit</button>
+        <button id="cancel" class="btn btn-default pull-right">Cancel</button>
+      </footer>
+    </section>
+    <footer id="pageFooter"><div class="text-center"><div>Author: Zeyu Feng</div></div></footer>
+    <script type="text/javascript" src="../backbone/jquery.js"></script>
+    <script type="text/javascript" src="../backbone/underscore.js"></script>
+    <script type="text/javascript" src="../backbone/backbone.js"></script>
+    <script type="text/javascript" src="../backbone/backbone.localStorage-min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="../backbone/jquery.pin.js"></script>
+    <script type="text/template" id="previewTemplate">
+      <header><h1><a href="#article/<%= id%>"><%= title%></a></h1><h4 class="date"><%= date%></h4></header>
+      <article><%= preview%></article>
+      <footer><a href="#article/<%= id%>" class="readMore">Read More <span class="glyphicon glyphicon-arrow-right"></span></a></footer>
+    </script>
+    <script type="text/template" id="fullTemplate">
+      <header><h1><%= title%></h1><h4 class="date"><%= date%></h4></header>
+      <article><%= article%></article>
+    </script>
+    <script type="text/javascript" src="index8.js"></script>
+  </body>
+</html>
